@@ -12,3 +12,9 @@
 	.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
 		background-color: #0CC7C7;
 	}
+@media only screen and (max-width: 766px) {
+.navbar-header, .navbar-collapse {
+
+  width: 100%;
+}
+}
