@@ -1,0 +1,616 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+
+    <!-- Meta-Information -->
+    <title>Семеен хотел | Вили Ла Коста</title>
+    <meta charset="utf-8">
+    <meta name="description" content="AngularJs, html5, store, shopping, siteweb, cart">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css"/>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900' rel='stylesheet' type='text/css'>
+
+    
+
+    <!-- Our Website CSS Styles -->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/slide/component.css" rel="stylesheet" type="text/css" />
+    <!-- Mini Slider -->
+    <!-- Carouse Testimonial-->
+    <link href="css/owl_carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl_carousel/owl.theme.css" rel="stylesheet" type="text/css" />
+    <!-- End Carouse Testimonial-->
+    <link href="css/minislide/flexslider.css" rel="stylesheet" type="text/css" />
+
+    <!-- End Mini Slider -->
+    
+    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/component_black.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+       <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" width="70" /></a>
+        </div>
+         <!--Shopping Cart-->
+
+        <div class="content-count-cart-header dropdown">
+                    <a href="" title="go to shopping cart" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-shopping-cart"></i>
+                        <p class="number-prod-cart">2</p> 
+                    </a>
+                      <div class="dropdown-menu vertical-li dropdown-prod-cart dropdown-prod-cart-scroll scroll-menu">
+                          <ul>
+                           <li>
+                            <div class="col-md-12 minitotal-prod">
+                                 <div class="col-md-6 minicart-img"> 
+                                    <img src="images/store/product/dresses/6.jpg" alt="Big Hoddie"/>
+                                 </div>
+                                 
+                                 <div class="col-md-6 minicart-data"><p class="mc-name">Big Hoddie</p>
+                                  <p>1 X $127.00</p>
+                                 </div>
+                            </div>
+                           </li>
+                           <li>
+                            <div class="col-md-12 minitotal-prod">
+                                 <div class="col-md-6 minicart-img"> 
+                                    <img src="images/store/product/2.jpg" alt="Rhon Doe"/>
+                                 </div>
+                                 
+                                 <div class="col-md-6 minicart-data"><p class="mc-name">Rhon Doe</p>
+                                  <p>1 X $110.00</p>
+                                 </div>
+                            </div>
+                           </li>
+                          </ul>
+                          <div class="separator"></div>
+                          <div id="cartInfo"><p class="minucart-price">Subtotal $237.00</p></div>
+                          <a href="shop/shoppingCart.html" id="goToCheckOut">Proceed to purchase</a>
+                    </div> 
+            </div>
+         <!--End Cart-->
+        <div class="collapse navbar-collapse navbar-ex1-collapse dropdown-prod-cart-scroll scroll-menu">
+        
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Начало <b class="caret"></b></a>
+                 <!--  <ul class="dropdown-menu vertical-li">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="home3.html">Home 3</a></li>
+                        <li><a href="home4.html">Home 4</a></li>
+                        <li><a href="home5.html">Home 5</a></li>
+                  </ul> -->
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">За нас <b class="caret"></b></a>
+                 <!--  <ul class="dropdown-menu vertical-li">
+                        <li><a href="about.html">About Us Page 1</a></li>
+                        <li><a href="about2.html">About Us Page 2</a></li>
+                        <li><a href="about3.html">About Us Page 3</a></li>
+                        <li><a href="about4.html">About Us Page 4</a></li>
+                  </ul> -->
+                </li>
+                
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Стаи <b class="caret"></b></a>
+                  <!-- <ul class="dropdown-menu vertical-li">
+                        <li><a href="shop/store.html">Shop Page</a></li>
+                        <li><a href="shop/store_dresses.html">Shop Dresses</a></li>
+                        <li><a href="shop/product.html">Single Prod.</a></li>
+                        <li><a href="shop/product_dresses.html">Single Dresses</a></li>
+                        <li><a href="shop/store_dresses_rc.html">Shop Dresses Right Col.</a></li>
+                        <li><a href="shop/store_dresses_lc.html">Shop Dresses Left Col.</a></li>
+                        <li><a href="shop/shoppingCart.html">Shopping Cart</a></li>
+                  </ul> -->
+                </li>
+
+                <li class="dropdown menu-large"><a class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+                     <!--  <ul class="menu-items megamenu dropdown-menu">
+                        <li class="menu-item col-sm-3">
+                            <h3 class="angula-megamenu-title">Page Samples 1</h3>
+                            <ul class="mega-sub-menu">
+                                <li><i class="fa fa-angle-right"></i><a href="services.html">Services</a></li>      
+                                <li><i class="fa fa-angle-right"></i><a href="meet_team.html">Meet the Team</a></li>
+                                <li><i class="fa fa-angle-right"></i><a href="faq.html">FAQ</a></li>
+                                <li><i class="fa fa-angle-right"></i><a href="404.html">404</a></li>
+                                <li><i class="fa fa-angle-right"></i><a href="pricing.html">Pricing Table</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item col-sm-3">
+                            <h3 class="angula-megamenu-title">Page Samples 2</h3>
+                            <ul class="mega-sub-menu">
+                                <li><i class="fa fa-angle-right"></i><a href="templates/footer.html">Footer 1 </a></li>
+                                <li><i class="fa fa-angle-right"></i><a href="templates/footer_2.html">Footer 2</a></li>
+                                <li><i class="fa fa-angle-right"></i><a href="templates/footer_3.html">Footer 3</a></li>
+                                <li><i class="fa fa-angle-right"></i><a href="templates/footer_sponsor.html">Footer 4</a></li>
+                                <li><i class="fa fa-angle-right"></i><a href="templates/header_dark.html">Header dark</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item col-sm-6 menu-adwertising">
+                            <div class="col-md-6">                              
+                                <figure class="hero-image hero-imacretina-1"></figure>
+                                <figure class="hero-image hero-imacretina-2"></figure>
+                                <figure class="hero-image hero-imacretina-3"></figure>
+                                <img class="discount" src="images/discount.png" alt="" />
+                            </div>
+                            <div class="col-md-6 menu-text-monitor">
+                                <p> Start something new.</p>
+                                <p><i class="fa fa-angle-right"></i> TV Monitor LED 19" HD</p>
+                                <p><i class="fa fa-angle-right"></i> Resolution: 1366x768</p>
+                                <p><i class="fa fa-angle-right"></i> Color:	16.7 milion</p>
+                            </div>
+                        </li>
+                      </ul> -->
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Лозенец <b class="caret"></b></a>
+                 <!--  <ul class="dropdown-menu vertical-li">
+                        <li><a href="blog.html">Blog Prod</a></li>
+                        <li><a href="blog_right.html">Blog Right Sidebar</a></li>
+                        <li><a href="blog_left.html">Blog Left Sidebar</a></li>
+                  </ul> -->
+                </li>
+                <li><a href="">Контакт</a>
+                </li>
+                
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+<!-- Slider -->
+<div class="container-slide">
+    <div id="boxgallery" class="boxgallery" data-effect="effect-3">
+		<div class="panel"><img src="http://alphatravelclub.com/wp-content/uploads/2014/04/lozenec-2.jpg" alt="Image 1"/></div>
+		<div class="panel"><img src="http://placehold.it/1920x1080" alt="Image 2"/></div>
+		<div class="panel"><img src="http://placehold.it/1920x1080" alt="Image 3"/></div>
+		<div class="panel"><img src="http://placehold.it/1920x1080" alt="Image 4"/></div>
+	</div>
+	<div class="slide-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8">
+                <h3>Добре дошли в сайта на семеен хотел<br> Вила Вили Ла Коста!</h3>
+               
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <a class="btn btn-lg btn-primary pull-right" href="#"><i class="fa fa-phone "></i>Свържете се с нас!</a>
+               
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+</div>
+
+</div>
+<div class="home4 section wave">
+  <div class="wather-ground"></div>
+    <div class="container">
+        <div class="row banner-info">
+            <div class="col-lg-12 text-center">
+                <h1 class="section-title">Нашите <span>услуги</span></h1>
+                <p class="sub-title">Excepteur sint occaecat cupidatat non proident sunt<br>in culpa officia deserunt</p>
+            </div>
+            <div class="col-lg-12 col-md-12 home4-percentage">
+				<div class="col-lg-3 col-md-3">
+					<div class="fact-icon"><span class="icon-layers"></span></div>
+						<h3 class="light uppercase">Parallax Sections</h3>
+                        <p>Parallax sections which will really attract the users attention.</p>
+				</div><!-- End Factor -->
+				<div class="col-lg-3 col-md-3">
+					<div class="fact-icon fact-icon-color2"><span class=" icon-tools-2"></span></div>
+						<h3 class="light uppercase">Quality Support</h3>
+                        <p>Parallax sections which will really attract the users attention.</p>
+				</div><!-- End Factor -->
+				<div class="col-lg-3 col-md-3">
+					<div class="fact-icon fact-icon-color3"><span class="icon-mobile"></span></div>
+						<h3 class="light uppercase">Responsive Layout</h3>
+                        <p>Parallax sections which will really attract the users attention.</p>
+				</div><!-- End Factor -->
+				<div class="col-lg-3 col-md-3">
+					<div class="fact-icon fact-icon-color4"><span class=" icon-linegraph"></span></div>
+						<h3 class="light uppercase">Modern Scripts</h3>
+                        <p>Parallax sections which will really attract the users attention.</p>
+				</div><!-- End Factor -->
+				<div class="clear"></div>
+			</div>
+
+        </div>
+
+        <!-- /.row -->
+        
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.section -->
+
+
+<div class="section home4-portfolio">
+
+      <div class="container">
+        <div class="row img-shadow effect-5" >
+            <div class="col-lg-12 text-center">
+                <h1 class="section-title">Нашите <span>стаи</span></h1>
+                <p class="sub-title">Excepteur sint occaecat cupidatat non proident sunt<br>in culpa officia deserunt</p>
+            </div>
+                <div class="group filter-button-top">
+			            <ul class="filter group albumFilter"> 
+				            <li data-filter="*" class="active">ВСИЧКИ</li> 
+				            <li data-filter=".cat1" >ДВОЙНИ</li> 
+				            <li data-filter=".cat2" >ТРОЙНИ</li> 
+				            <li data-filter=".cat3" >АПАРТАМЕНТИ</li> 
+				            <li data-filter=".cat4" >ДРУГИ</li> 
+			            </ul> 
+	            </div>
+             </div>
+        </div>      
+        <div id="cbp-vm" class="activegrid">
+                <ul id="product" class="albumContainer">
+                    <li class="cat3">
+                        <div class="img_holder">
+                               <div class="overlay"> 
+                                    <div class="c-loc">
+                                    <a class="icon fancybox-effects-d" data-fancybox-group="button" href="images/8.jpg"><i class="fa fa-eye"></i> </a></div>
+                                    <a class="title" href=""> Nature Pro  </a>
+                                </div> 
+                                <img src="http://placehold.it/700x450" alt="" />
+                        </div> 
+                    </li> 
+                    <li class="cat1">
+                        <div class="img_holder">
+                               <div class="overlay"> 
+                                    <div class="c-loc">
+                                    <a class="icon fancybox-effects-d" data-fancybox-group="button" href="images/8.jpg"><i class="fa fa-eye"></i> </a></div>
+                                    <a class="title" href=""> Boat NC  </a>
+                                </div> 
+                            <img src="http://placehold.it/700x450" alt="" />                       
+                        </div>
+                    </li>
+                    <li class="cat1">
+                      <div class="img_holder">
+                            <div class="overlay"> 
+                                    <div class="c-loc">
+                                    <a class="icon fancybox-effects-d" data-fancybox-group="button" href="images/8.jpg"><i class="fa fa-eye"></i> </a></div>
+                                    <a class="title" href=""> Creative  </a>
+                                </div> 
+                            <img src="http://placehold.it/700x450" alt="" />
+                        </div>
+                    </li>
+                    <li class="cat2">
+                        <div class="img_holder">
+                            <div class="overlay"> 
+                                    <div class="c-loc">
+                                    <a class="icon fancybox-effects-d" data-fancybox-group="button" href="images/8.jpg"><i class="fa fa-eye"></i> </a></div>
+                                    <a class="title" href=""> Room Pro  </a>
+                                </div> 
+                            <img src="http://placehold.it/700x450" alt="" />
+                        </div>
+                    </li>
+                    <li class="cat4">
+                        <div class="img_holder">
+                            <div class="overlay"> 
+                                    <div class="c-loc">
+                                    <a class="icon fancybox-effects-d" data-fancybox-group="button" href="images/8.jpg"><i class="fa fa-eye"></i> </a></div>
+                                    <a class="title" href=""> Office Air  </a>
+                                </div> 
+                            <img src="http://placehold.it/700x450" alt="" />
+                        </div>
+                    </li>
+                    <li class="cat2">
+                        <div class="img_holder">
+                            <div class="overlay"> 
+                                    <div class="c-loc">
+                                    <a class="icon fancybox-effects-d" data-fancybox-group="button" href="images/6.jpg"><i class="fa fa-eye"></i> </a></div>
+                                    <a class="title" href=""> Dancing  </a>
+                                </div> 
+                            <img src="http://placehold.it/700x450" alt="" />
+                        </div>
+                    </li>
+                </ul>           
+        </div>
+
+
+</div>
+<!-- /.section -->
+<div class="clear"></div>
+<!-- SECTION TEAM -->
+<div id="clients-home4" class="parallax-texture">
+    <div class="black-shadow"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 team">
+            <h1 class="section-title">Our <span>Team</span></h1>
+                <p class="sub-title">Excepteur sint occaecat cupidatat non proident sunt<br>in culpa officia deserunt</p>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="team-img view view-second">
+	               <img src="http://placehold.it/300x290" alt="" />                   
+                    <div class="content">
+                        <p>A wonderful serenity has taken possession.</p>
+                        <ul class="list-unstyled list-inline list-social-icons">
+                            <li class="tooltip-social facebook-link">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                 </a>
+                            </li>
+                            <li class="tooltip-social twitter-link">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                         <i class="fa fa-twitter"></i>
+                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                  <p>Mike Cross</p>
+                </div> 
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="team-img view view-second">
+	               <img src="http://placehold.it/300x290" alt="" />
+                    <div class="content">
+                        <p>A wonderful serenity has taken possession.</p>
+                        <ul class="list-unstyled list-inline list-social-icons">
+                            <li class="tooltip-social facebook-link">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                 </a>
+                            </li>
+                            <li class="tooltip-social twitter-link">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                         <i class="fa fa-twitter"></i>
+                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                  <p>Mike Cross</p>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="team-img view view-second">
+	               <img src="http://placehold.it/300x290" alt="" />
+                    <div class="content">
+                        <p>A wonderful serenity has taken possession.</p>
+                        <ul class="list-unstyled list-inline list-social-icons">
+                            <li class="tooltip-social facebook-link">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                 </a>
+                            </li>
+                            <li class="tooltip-social twitter-link">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                         <i class="fa fa-twitter"></i>
+                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                  <p>Mike Cross</p>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="team-img view view-second">
+	               <img src="http://placehold.it/300x290" alt="" />
+                    <div class="content">
+                        <p>A wonderful serenity has taken possession.</p>
+                        <ul class="list-unstyled list-inline list-social-icons">
+                            <li class="tooltip-social facebook-link">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                 </a>
+                            </li>
+                            <li class="tooltip-social twitter-link">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                         <i class="fa fa-twitter"></i>
+                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                  <p>Mike Cross</p>
+                </div>
+            </div>
+          </div>
+     </div>
+</div>
+
+<div class="section-images">
+   
+    <div class="container">
+
+        <div class="row">
+            <div id="screen-macbook" class="col-lg-6 col-md-6 col-sm-6">
+                <img src="http://www.vililacosta.com/images/house1.jpg" alt="" />
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <h2 class="page-header-title home3space"><span>Amazing & Powerfull Design</span></h2>
+                <p>
+                Внимавайте вие, читатели и слушатели, роде български, които обичате и вземате присърце своя род и своето българско отечество и желаете да разберете и знаете известното за своя български род и за вашите бащи, прадеди и царе, патриарси и светии как изпърво са живели и прекарвали. За вас е потребно и полезно да знаете известното за делата на вашите бащи, както знаят всички други племена и народи своя род и език, имат история и всеки грамотен от тях знае, разказва и се гордее със своя род и език.
+                </p>
+                <p class="personal-phrase"><i class="fa fa-quote-left"></i>
+                  Така и аз ви написах подред това, което е известно за вашия род и език. Четете и знайте, за да не бивате подигравани и укорявани от други племена и народи.<i class="fa fa-quote-right"></i>
+                </p>
+               <p>
+                Твърде много обикнах българския род и отечество и много труд употребих да събирам от различни книги и истории, докато събрах и обединих историята на българския род в тая книжка за ваша полза и похвала. Написах я за вас, които обичате своя род и българското отечество и обичате да знаете за своя род и език. Преписвайте тая историйка и платете, нека ви я препишат, които умеят да пишат, и пазете я да не изчезне!</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+   
+</div>
+<!-- /.section-colored -->
+
+<!-- SECTION TESTIMONIALS-->
+<div id="infoCompany-home4" class="section">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="text-center">
+               <h1 class="section-title">Какво казват <span>хората</span> за нас</h1>
+                <p class="sub-title">Тук може да прочетете мнения, <br>от нашите клиенти</p>
+              </div>
+                <div id="testimonials">
+                        
+                          <div id="owl-demo" class="owl-carousel">
+                            <div class="item">
+                                 <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.0.349.349/s160x160/582426_514184241945828_966812738_n.jpg?oh=7d0d4813deb010bf7ce1f931acf7610e&oe=55E782F0&__gda__=1445108027_63904ea496365878975333973240fa28" alt="" />
+                                 <div class="testimon-desc arrow_box">
+                                      <p>Обичаам <span>това</span> място, но повече обичам стопаните му! Вила Вили е най-прекрастното място за почивка в Лозенец
+                                      </p>
+                                      <p>Всяка година идваме с мъжът ми дори и мойте деца идват тук за почивката си.</p>
+                                      <p class="nm-name">- Виолина Станкова</p>
+                                </div>
+                            </div>
+                          <!--   <div class="item">
+                                 <img src="http://placehold.it/300x290" alt="" />
+                                 <div class="testimon-desc arrow_box">
+                                      <p>Fusce risus metus, placerat in <span>consectetur</span> eu, porttitor a est sed sed dolor lorem cras adipiscing</p>
+                                      <p>A small <span>creative</span> team, trying to enrich the lives of others</p>
+                                      <p class="nm-name">- Miki Rood</p>
+                                 </div>
+                           </div>
+                            <div class="item">
+                                <img src="http://placehold.it/300x290" alt="" />
+                                <div class="testimon-desc arrow_box">
+                                    <p>Fusce risus metus, placerat in <span>consectetur</span> eu, porttitor a est sed sed dolor lorem cras adipiscing</p>
+                                      <p>A small <span>creative</span> team, trying to enrich the lives of others</p>
+                                      <p class="nm-name">- Robert Rood</p>
+                                </div>
+                            </div> -->
+
+                          </div>
+                </div>
+                 
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.section -->
+
+<div class="home4-city-bg">
+    
+      <div class="well">
+        <div class="container">
+            <div class="row row-box">
+                <div class="col-lg-12 col-md-12">
+                  <div class="content-contact-phone">
+                    <span class="icon-anchor"></span>
+                    <h4>+359 885 86 87 19</h4>
+                    <h4>+359 886 84 93 12</h4>
+                    <p>ул.Преображенска №1 с. Лозенец Община Царево</p>
+                    <p><a href="mailto:support@angula.com" class="mail-text">vililacosta.com</a></p>
+                  </div>
+                </div>
+            </div>
+           
+        </div>
+        
+    </div>
+</div>
+
+<footer>
+    
+    <div class="container top-footer-in twocolor4">
+        <div class="row">
+           <div class="col-lg-3 col-md-3 col-sm-3">
+             <div style="width:100%"><a class="logofooter4" href="index.html"><img src="images/logo.png" alt="logo" width="150" /></a></div>
+             <p>
+                Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas.
+             </p>
+             <p><i class="fa fa-phone"></i>Phone : 041-123 965</p>
+             <p><i class="fa fa-envelope-o"></i>Email: info@angula.com</p>
+           </div>
+        </div>
+        
+    </div>
+    <div class="info-footer">
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                         <div class="col-sm-4"><span class="ic-fo icon-phone"></span><span> +353 (0) 123 456 78</span></div>
+                         <div class="col-sm-4"><span class="ic-fo icon-envelope"></span><span> hello@angutheme.com</span></div>
+                         <div class="col-sm-4"><span class="ic-fo icon-map-pin"></span><span>+353 (0) 123 456 78</span></div>
+                       </div>
+                    </div>
+            </div>
+        </div>
+    
+</footer>
+
+
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+<script src="js/modernizr.js" type="text/javascript"></script>
+<script src="js/jquery.appear.js" type="text/javascript"></script>
+
+<!--slide-->
+<script src="js/slide/modernizr.custom.js" type="text/javascript"></script>
+<script src="js/slide/classie.js"></script>
+<script src="js/slide/boxesFx.js"></script>
+<!--Mini Flexslide-->
+<script src="js/minislide/jquery.flexslider.js" type="text/javascript"></script>
+<!--Carousel Testimonial-->
+<script src="js/owl_carousel/owl.carousel.js" type="text/javascript"></script>
+<!--Porfolio-->
+<script src="js/gallery/jquery.fancybox.js" type="text/javascript"></script>
+<script src="js/gallery/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
+
+
+<!-- Filter Images-->
+<script src="js/isotope.js" type="text/javascript"></script>
+
+<script src="js/script.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    /**************  Animated images portfolio  ************************/
+    $(document).ready(function () {
+        "use strict";
+        $(".img-prt").hover(function () {
+            $(this).addClass("hover");
+        }, function () {
+            $(this).removeClass("hover");
+        }
+        );
+    });
+</script>
+
+</body>
+</html>
