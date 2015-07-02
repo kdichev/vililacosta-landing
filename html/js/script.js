@@ -8,7 +8,6 @@ $(document).ready(function ($) {
         try {
             var myTimer = 0; clearTimeout(myTimer);
             myTimer = setTimeout(function () { $("#loader-wrapper").slideUp() }, 2000);
-
         } catch (err) {
         }
     });
