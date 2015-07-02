@@ -715,8 +715,7 @@ ul.menu-items li.menu-adwertising{display:none}
 
 
 
-@media only screen and (max-width: 480px) 
-{
+@media only screen and (max-width: 480px){
 
 /*Slider*/
 .slide-middle-txt {
@@ -799,7 +798,7 @@ footer .top-footer-in .col-md-3 {width: 100%;}
     text-align: center;
     margin: 20px auto;
 }
-#infoCompany-home4 #owl-demo .item img {display: none;}
+/*#infoCompany-home4 #owl-demo .item img {display: none;}*/
 
 #infoCompany-home4 .testimon-desc {
     padding: 10px 20px 10px 20px;
