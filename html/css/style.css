@@ -2,19 +2,16 @@
 	border: initial;
 }
 
-
-	.nav>li {
-		border-bottom: initial;
-	}
-
-
-
-	.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
-		background-color: #0CC7C7;
-	}
-@media only screen and (max-width: 766px) {
-.navbar-header, .navbar-collapse {
-
-  width: 100%;
+.nav>li {
+	border-bottom: initial;
 }
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+	background-color: #0CC7C7;
+}
+
+@media only screen and (max-width: 766px) {
+	.navbar-header, .navbar-collapse {
+		width: 100%;
+	}
 }
